@@ -1,4 +1,3 @@
-
 // Model of Comment
 const mongoose = require("mongoose");
 

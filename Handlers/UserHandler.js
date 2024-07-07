@@ -55,11 +55,11 @@ exports.updateUser = async (req, res) => {
   try {
     const { email, password, username, purchaseHistory, shippingAddress } =
       req.body;
-      let updateFields = { email, username, purchaseHistory, shippingAddress };
-      
-      if (password) {
-        updateFields.password = await bcrypt.hash(password, 8);
-      }
+    let updateFields = { email, username, purchaseHistory, shippingAddress };
+
+    if (password) {
+      updateFields.password = await bcrypt.hash(password, 8);
+    }
 
     const updateExistingUser = await User.findByIdAndUpdate(
       req.params.id,
