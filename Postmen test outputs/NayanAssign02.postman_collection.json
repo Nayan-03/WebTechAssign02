@@ -1,0 +1,1021 @@
+{
+	"info": {
+		"_postman_id": "f3cdca60-d095-49f5-9f6c-b58f0c77ee26",
+		"name": "NayanAssign02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24244647"
+	},
+	"item": [
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Faile cases",
+					"item": [
+						{
+							"name": "getComment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Comments/434",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Comments",
+										"434"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateComment",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"commentId\": 3434,\r\n        \"productId\": 2,\r\n        \"userId\": 2,\r\n        \"rating\": 5,\r\n        \"images\": \"comment1.png\",\r\n        \"text\": \"product is awesome\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/Comments/3434",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Comments",
+										"3434"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteComment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Comments/456",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Comments",
+										"456"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllComments_GET",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CommentById_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Comments/668a4db2e1069de5932d9ac8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Comments",
+								"668a4db2e1069de5932d9ac8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddComment_POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"668a4c01e1069de5932d9abd\",\r\n    \"userId\": \"668a46ffe1069de5932d9aa3\",\r\n    \"rating\":5,\r\n    \"images\": \"dscsdsc.jpg\",\r\n    \"text\": \" vcbcbcvbcbvcb!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Comments/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Comments",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateComment_PUT",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"commentId\": \"668a4df5e1069de5932d9aca\",\r\n    \"productId\": \"668a4c01e1069de5932d9abd\",\r\n    \"userId\": \"668a46ffe1069de5932d9aa3\",\r\n    \"rating\": 3,\r\n    \"images\": \"fgfcgcg.jpg\",\r\n    \"text\": \"cfgcgcgfcgcgcg!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Comments/668a4df5e1069de5932d9aca",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Comments",
+								"668a4df5e1069de5932d9aca"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCommentById_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Comments/668a4db2e1069de5932d9ac8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Comments",
+								"668a4db2e1069de5932d9ac8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Failed cases",
+					"item": [
+						{
+							"name": "getOrders",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Orders/4334",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Orders",
+										"4334"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateOrders",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"orderId\": 500,\r\n    \"userId\": 2,\r\n    \"productId\": 3,\r\n    \"quantity\": 400,\r\n    \"orderDate\": \"2024-03-27T11:35:00\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/Orders/34t656",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Orders",
+										"34t656"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteOrder",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Orders/34334",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Orders",
+										"34334"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllOrder_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OrderById_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Orders/6613540f07a4eebab7b34eb8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Orders",
+								"6613540f07a4eebab7b34eb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddOrder_POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": \"668a4c01e1069de5932d9abd\",\r\n    \"userId\": \"668a46ffe1069de5932d9aa3\",\r\n    \"quantity\": 16,\r\n    \"orderDate\": \"2025-04-28T12:11:45\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateOrdert_PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"orderId\": \"668a5875e1069de5932d9ad6\",\r\n        \"productId\": \"668a4c01e1069de5932d9abd\",\r\n         \"userId\": \"668a46ffe1069de5932d9aa3\",\r\n        \"quantity\": 45,\r\n        \"orderDate\": \"2026-12-28T12:12:13\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Orders/668a5875e1069de5932d9ad6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Orders",
+								"668a5875e1069de5932d9ad6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteOrderById_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Orders/668a5805e1069de5932d9ad3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Orders",
+								"668a5805e1069de5932d9ad3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Failed cases",
+					"item": [
+						{
+							"name": "getProduts",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Products/668a48d0e1069de5932d9ab1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Products",
+										"668a48d0e1069de5932d9ab1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateProduct",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"productId\": 4,\r\n    \"description\": \"Sneakers\",\r\n    \"image\": \"https://example.com/sneakers.jpg\",\r\n    \"pricing\": 49.99,\r\n    \"shippingCost\": 7.50\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/Products/668a48d0e1069de5932d9ab1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Products",
+										"668a48d0e1069de5932d9ab1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Products/668a48d0e1069de5932d9ab1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Products",
+										"668a48d0e1069de5932d9ab1"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllProducts_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ProductById_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Products/668a4c01e1069de5932d9abd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Products",
+								"668a4c01e1069de5932d9abd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddProduct_POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"dcdsdvdv 1\",\r\n    \"image\": \"sscscs.jpg\",\r\n    \"pricing\": 454.00,\r\n    \"shippingCost\": 12.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/products/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateProduct_PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"productId\": 23,\r\n    \"description\": \"vvdfvdfv\",\r\n    \"image\": \"cddcdfdr.jpg\",\r\n    \"pricing\": 38.92,\r\n    \"shippingCost\": 32.3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Products/668a4c01e1069de5932d9abd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Products",
+								"668a4c01e1069de5932d9abd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteProductById_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Products/668a4c12e1069de5932d9abf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Products",
+								"668a4c12e1069de5932d9abf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Failed cases",
+					"item": [
+						{
+							"name": "getCart",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Carts/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Carts",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateCart",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"cartId\": 436,\r\n    \"productId\": 2,\r\n    \"quantity\": 1,\r\n    \"userId\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/Carts/nnn b67",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Carts",
+										"nnn b67"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteCart",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Carts/hgv765",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Carts",
+										"hgv765"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllCart_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Carts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Carts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CartById_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Carts/66124b5c5b5dbb8c0881afee",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Carts",
+								"66124b5c5b5dbb8c0881afee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddCart_POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"quantity\": 76,\r\n        \"productId\": \"668a4c01e1069de5932d9abd\",\r\n        \"userId\": \"668a46ffe1069de5932d9aa3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Carts/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Carts",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateCart_PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cartId\": \"668a5992e1069de5932d9ae0\",\r\n        \"productId\": \"668a4c01e1069de5932d9abd\",\r\n        \"userId\": \"668a46ffe1069de5932d9aa3\",\r\n        \"quantity\": 77\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Carts/668a5992e1069de5932d9ae0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Carts",
+								"668a5992e1069de5932d9ae0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCartById_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Carts/668a595be1069de5932d9ade",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Carts",
+								"668a595be1069de5932d9ade"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Failed tests",
+					"item": [
+						{
+							"name": "getUsers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Users/323",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Users",
+										"323"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateUsers",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": " {\r\n        \"userId\": 588,\r\n        \"email\": \"user1@example.com\",\r\n        \"password\": \"password1\",\r\n        \"username\": \"user1\",\r\n        \"purchaseHistory\": \"[]\",\r\n        \"shippingAddress\": \"123 Main St, City, Country\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/Users/323",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Users",
+										"323"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProduct",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/Users/668a46ffe1069de5932d9aa3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"Users",
+										"668a46ffe1069de5932d9aa3"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AllUsers_GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UserById_GET",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Users/668a46ffe1069de5932d9aa3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Users",
+								"668a46ffe1069de5932d9aa3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddUser_POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"email\": \"nayanxyz@example.com\",\r\n        \"password\": \"password22323\",\r\n        \"username\": \"nayan1223233\",\r\n        \"purchaseHistory\": \"ph12323\",\r\n        \"shippingAddress\": \"saddress3223\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Users/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUser_PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"userId\": 3,\r\n        \"email\": \"nayan4@example.com\",\r\n        \"password\": \"pwd4545\",\r\n        \"username\": \"user3\",\r\n        \"purchaseHistory\": \"ph 5\",\r\n        \"shippingAddress\": \"Address 5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/Users/668a46ffe1069de5932d9aa3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Users",
+								"668a46ffe1069de5932d9aa3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUserById_DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/Users/668a48d0e1069de5932d9ab1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"Users",
+								"668a48d0e1069de5932d9ab1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
